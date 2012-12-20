@@ -1,4 +1,4 @@
-filename = akad-wim11-ipv6
+filename = akad-win11-ipv6
 
 UNAME_S := $(shell uname -s)
 

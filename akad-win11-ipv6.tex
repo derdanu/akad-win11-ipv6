@@ -9,6 +9,7 @@
 
 \usetheme{Warsaw}
 \usecolortheme[named=OliveGreen]{structure}
+\renewcommand\thempfootnote{\arabic{mpfootnote}}
 
 \newcommand*{\Title}{Warum ist ein neues Internetprotokoll notwendig?} %Titel
 \subtitle{Modul WIN11} %Untertitel
@@ -53,6 +54,7 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 	  \begin{itemize}
 	  	\item Definiert 1981 im RFC \footnote{Request for Comments} 791
 	  	\item Beispiel Adresse: 8.8.8.8
+  		\item nur $2^{32}$ (4294967296) = 4 Milliarden Adressen
 	  \end{itemize}
   \end{block}
 \end{frame}
@@ -64,7 +66,6 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 	  \begin{itemize}
   		\item Definiert 1998 im RFC 2460 
   		\item Beispiel Adresse: 2001:4860:4860::8888
-  		\item 128 Bit Adressen
 	  \end{itemize}
   \end{block}
 \end{frame}
@@ -72,11 +73,12 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 
 %\frame{\tableofcontents[currentsection]}
 
-\section{Nachteile IPv4}
+\section{Nachteile IPv6}
 \begin{frame}
-  \begin{alertblock}{Nachteile Internet Protocol Version 4}
+  \begin{alertblock}{Nachteile Internet Protocol Version 6}
 	  \begin{itemize}
-  		\item nur $2^{32}$ (4294967296) = 4 Milliarden Adressen
+	    \item Software muss IPv6 fähig sein. (Kosten)
+	    \item Mögliche Sicherheitsprobleme durch Wegfallen von IPv4 NAT \footnote{Network Address Translation}
 	  \end{itemize}
   \end{alertblock}
 \end{frame}
@@ -86,7 +88,9 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
   \begin{block}{Vorteile Internet Protocol Version 6}
 	  \begin{itemize}
   		\item $2^{128}$ (3,402823669 * $10^{38}$) = > 340 Sextillionen Adressen
-  		\item Jedes Endgerät hat eine eindeutige IP-Adresse
+  		\item Jedes Endgerät hat eine eindeutige IP-Adresse (kein NAT \footnote{Network Address Translation})
+  		\item Autokonfiguration SLAAC \footnote{Stateless Address Autoconfiguration} mit DAD \footnote{Duplicate Address Detection}
+ 
 	  \end{itemize}
   \end{block}
 \end{frame}
@@ -106,6 +110,7 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 	  \begin{itemize}
   		\item IPv4 \url{http://tools.ietf.org/html/rfc791}
   		\item IPv6 \url{http://tools.ietf.org/html/rfc2460}
+  		\item IPv6 SLAAC \footnote{Stateless Address Autoconfiguration} \url{http://tools.ietf.org/html/rfc4862}
 	  \end{itemize}
   \end{block}
 \end{frame}

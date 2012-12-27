@@ -59,7 +59,7 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
   \end{block}
 \end{frame}
 
-\subsubsection{test}
+\subsubsection{Verfügbare Adressen}
 \begin{frame}  
   \frametitle{Internet Protocol Version 4}
   \framesubtitle{17.Dezember 2012 nur noch 16,84 Million Adressen verfügbar}
@@ -74,8 +74,11 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
   \frametitle{Internet Protocol Version 6}
   \begin{block}{IPv6}
 	  \begin{itemize}
-  		\item Definiert 1998 im RFC 2460 
+  		\item Definiert 1998 im RFC \footnote{Request for Comments} 2460 
   		\item Beispiel Adresse: 2001:4860:4860::8888
+		\item immer mehr Geräte sind über das Internet steuerbar
+		\item immer mehr Smartphones und weitere mobile Geräte verfügbar
+		\item intelligente Stromzähler \footnote{Smart Metering} benötigen ebenfalls IP Adressen
 	  \end{itemize}
   \end{block}
 \end{frame}
@@ -87,8 +90,17 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 \begin{frame}
   \begin{alertblock}{Nachteile Internet Protocol Version 6}
 	  \begin{itemize}
-	    \item Software muss IPv6 fähig sein. (Kosten)
-	    \item Mögliche Sicherheitsprobleme durch Wegfallen von IPv4 NAT \footnote{Network Address Translation}
+	  	\item Anpassungen auf IPv6 Fähigkeit verursacht Kosten
+	  	\begin{itemize}
+		    \item Infrastruktur
+		    \item Bestriebssysteme 
+		    \item Anwendungssoftware
+		\end{itemize}	    
+	    \item Mögliche Sicherheitsprobleme durch 
+		\begin{itemize}
+		     \item Wegfallen von IPv4 NAT \footnote{Network Address Translation} 
+		     \item direkter Ende zu Ende Kommunikation
+		\end{itemize}
 	  \end{itemize}
   \end{alertblock}
 \end{frame}
@@ -98,9 +110,11 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
   \begin{block}{Vorteile Internet Protocol Version 6}
 	  \begin{itemize}
   		\item $2^{128}$ (3,402823669 * $10^{38}$) = > 340 Sextillionen Adressen
-  		\item Jedes Endgerät hat eine eindeutige IP-Adresse (kein NAT \footnote{Network Address Translation})
-  		\item Autokonfiguration SLAAC \footnote{Stateless Address Autoconfiguration} mit DAD \footnote{Duplicate Address Detection}
- 
+  		\item Jedes Endgerät hat eine eindeutige IP-Adresse 
+  		\item Wegfall von NAT \footnote{Network Address Translation}
+  		\item Plug \& Play - Autokonfiguration SLAAC \footnote{Stateless Address Autoconfiguration} mit DAD \footnote{Duplicate Address Detection}
+ 		\item Effizienteres Routing
+ 		\item erweiterter Header
 	  \end{itemize}
   \end{block}
 \end{frame}
@@ -109,8 +123,12 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
 
 \section{Fazit und Ausblick}
 \begin{frame}
- \frametitle{Lorem ipsum}
-  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ \frametitle{das Internet Protocol Version 6 kommt}
+	Viele große Diensteanbieter (Google, Facebook etc.) nutzen schon seit längerer Zeit beide Protokolle im Dual Stack Betrieb. Der 06. Juni 2012 wurde zum World IPv6 Launch Day. An diesem Tag ging IPv6 offiziell in Betrieb. Der ISP (Deutsche Telekom AG) bindet mittlerweile auch Privatkunden, zusätzlich mit IPv6, an das Internet an.
+	\begin{figure}
+	\includegraphics[scale=0.4]{World_IPv6_launch_logo_128.png}
+			\caption{IPv6 Logo \\ \tiny{\textcolor{gray}{\url{http://www.worldipv6launch.org}}}}
+	\end{figure} 
 \end{frame}
 
 \section{Quellen}
@@ -121,6 +139,7 @@ Das Internet Protocol (IP) ist die Grundlage für die Datenübertragung im Inter
   		\item IPv4 \url{http://tools.ietf.org/html/rfc791}
   		\item IPv6 \url{http://tools.ietf.org/html/rfc2460}
   		\item IPv6 SLAAC \footnote{Stateless Address Autoconfiguration} \url{http://tools.ietf.org/html/rfc4862}
+  		\item http://www.worldipv6launch.org/
 	  \end{itemize}
   \end{block}
 \end{frame}
